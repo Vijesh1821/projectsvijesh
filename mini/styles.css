@@ -1,0 +1,446 @@
+/* Header Styling */
+header {
+    position: fixed;
+    width: 100%;
+    background: rgba(240, 233, 233, 0.9);
+    box-shadow: 0 2px 4px rgba(240, 234, 234, 0.1);
+    z-index: 1000;
+    background-color: rgb(227, 212, 212);
+  }
+  #edit{
+    color:white
+  }
+  #color{
+    background-color: black;
+  }
+  nav {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    padding: 15px 100px;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .logo {
+    max-height: 60px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #171717;
+    position: relative;
+    padding: 5px 0;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #fd4766;
+  }
+  
+  nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #fd4766;
+    transition: width 0.3s;
+    bottom: -5px;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+/*Service section*/
+.services {
+    padding: 80px 20px;
+    background-color: #0c0b0b;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #f0e9e9;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .service {
+    background-color: #fff;
+    width: 250px;
+    margin: 15px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .service:hover {
+    transform: translateY(-10px);
+    background-color: rgba(6, 243, 117, 0.7);
+    color: #fff;
+  }
+  
+  .service-icon {
+    font-size: 40px;
+    color: rgba(6, 243, 117, 0.7);
+    margin-bottom: 15px;
+  }
+  
+  .service:hover .service-icon {
+    color: #fff;
+  }
+  
+  .service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .service p {
+    font-size: 16px;
+    color: #555;
+  }
+
+
+  /* Portfolio Section Styling */
+  .portfolio {
+    padding: 80px 20px;
+    background-color:black;
+    text-align: center;
+  }
+  
+  .portfolio h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ede2e2;
+  }
+  
+  .filter-buttons {
+    margin-bottom: 30px;
+  }
+  
+  .filter-btn {
+    background-color: #fd4766;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .filter-btn:hover,
+  .filter-btn.active {
+    background-color: #fff;
+    color: #fd4766;
+  }
+  
+  .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .portfolio-item {
+    position: relative;
+    width: 250px;
+    margin: 15px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(6, 243, 117, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .portfolio-item:hover .overlay {
+    opacity: 1;
+  }
+  
+  .play-icon {
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .portfolio-info {
+    padding: 15px;
+  }
+  
+  .portfolio-info h3 {
+    font-size: 20px;
+    color: #f3f3f3;
+  }
+
+/* Contact Section Styling */
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px; /* Add more padding if needed */
+  background-color: black; /* Add a background color if required */
+  flex-direction: column; /* Ensures that the content stacks vertically */
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #fcfbfb;
+  text-align: center; /* Center the heading */
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column; /* Stacks the form and info vertically */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-info, .contact-form {
+  background-color: black;
+  padding: 30px 20px;
+  border-radius: 10px;
+  margin: 15px;
+  width: 100%;
+  max-width: 400px; /* Set a maximum width */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Center the social media icons */
+.contact-info .social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contact-info .social-media a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+  background-color: #fd4766;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-info .social-media a:hover {
+  background-color: #4d4a4a;
+  transform: translateY(-5px);
+}
+
+/* Contact form input adjustments */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #4d4b4b;
+  border-radius: 5px;
+  resize: none;
+  width: 100%;
+  max-width: 100%; /* Makes sure it stays within the form's width */
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #47fd81;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #333;
+}
+
+/* General body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+header {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+.image-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;  /* Adjust to your desired slider width */
+  height: 400px;     /* Set consistent height */
+  margin: 20px auto;
+  position: relative;  /* For positioning the buttons */
+}
+
+.image-slider img {
+  width: 100%;         /* Set all images to the slider width */
+  height: 100%;        /* Set consistent height */
+  object-fit: cover;   /* Maintain aspect ratio, cropping if necessary */
+  display: none;  
+  text-align: center; 
+  align-items: center;    /* Hide images by default */
+}
+
+.image-slider img.active {
+  display: block;      /* Show the active image */
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.slider-button.prev {
+  left: 10px;
+}
+
+.slider-button.next {
+  right: 10px;
+}
+
+#get-started {
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #0080ff;
+    color:white;
+    border: none;
+    cursor: pointer;
+}
+
+.image-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image-grid img {
+    width: 200px; /* Adjust as needed */
+    height: auto;
+}
+#facebook{
+  padding: 10px 20px;
+    margin: 20px 0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#linkedin{
+  padding: 10px 20px;
+    margin: 20px 0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#youtube{
+  padding: 10px 20px;
+    margin: 20px 0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#instagram{
+  padding: 10px 20px;
+    margin: 20px 0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#twitter{
+  padding: 10px 20px;
+    margin: 20px 0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#click-here{
+  padding: 10px 20px;
+  margin: 20px 0;
+  background-color: #0080ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#facebook{
+  background-color: black;
+}
+#linkedin{
+  background-color: black;
+}
+#youtube{
+  background-color: black;
+}
+#instagram{
+  background-color: black;
+}
+#twitter{
+  background-color: black;
+}
+video{
+  width: 100%;
+  height: 60%;
+}

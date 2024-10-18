@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>EditKaro</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css">
+</head>
+<body id="color">
+   <header>
+      <nav>
+          <ul>
+              <li>editkaro.in</li>
+              <li><a href="#home" class="under">Home</a></li>
+              <li><a href="#services" class="under">Services</a></li>
+              <li><a href="#portfolio" class="under">Portfolio</a></li>
+              <li><a href="#contact" class="under">Contact</a></li>
+          </ul>
+      </nav>
+   </header>
+   <br><br><br>
+   <section id="home">
+      <div class="content">
+         <br><br>
+         <span class="title">Social Media Marketing & Video Editing Agency</span>
+         <br><br><br><br>
+         <h1 id="edit">Welcome to Editkaro.in</h1>
+      </div>
+   </section> 
+
+   <!-- Text shadow for the H1 tag -->
+   <style>
+      h1 {
+         color: black;
+         text-shadow: 2px 4px 8px #000000;
+      }
+   </style>
+   <br>
+   <button id="get-started">Get Started</button>
+   
+   <!-- Services Section -->
+   <section id="services" class="services">
+      <h2>Services</h2>
+      <div class="services-container">
+         <div class="service">
+            <ion-icon name="videocam" class="service-icon"></ion-icon>
+            <h3>Video Editing</h3>
+         </div>
+         <div class="service">
+            <ion-icon name="people" class="service-icon"></ion-icon>
+            <h3>Social Media Marketing</h3>
+         </div>
+         <div class="service">
+            <ion-icon name="color-palette" class="service-icon"></ion-icon>
+            <h3>Color Grading</h3>
+         </div>
+         <div class="service">
+            <ion-icon name="analytics" class="service-icon"></ion-icon>
+            <h3>Analytics & Reporting</h3>
+         </div>
+      </div>
+   </section>
+
+   <!-- Portfolio Section -->
+   <br><br>
+   <section id="portfolio" class="portfolio">
+      <h2>Portfolio</h2>
+      <div class="portfolio-container">
+         <!-- Portfolio Items -->
+         <section class="portfolio-container">
+            <!-- First Video -->
+            <div class="portfolio-item" data-category="long">
+                <video id="video1" controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="portfolio-info">
+                    <h3>Short-Form Video 1</h3>
+                </div>
+            </div>
+         <!-- Other Portfolio Items -->
+         <!-- Long-Form Video -->
+         <div class="portfolio-item" data-category="long">
+            <video id="video2" controls>
+                <source src="video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="portfolio-info">
+                <h3>Long-Form Video 2</h3>
+            </div>
+        </div>
+         <!-- Add more portfolio items similarly -->
+         <div class="portfolio-item" data-category="gaming">
+            <video id="video3" controls>
+                <source src="video3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="portfolio-info">
+                <h3>Gaming video</h3>
+            </div>
+        </div>
+      
+        <div class="portfolio-item" data-category="long">
+         <video id="video4" controls>
+             <source src="video4.mp4" type="video/mp4">
+             Your browser does not support the video tag.
+         </video>
+         <div class="portfolio-info">
+             <h3>Cricket video</h3>
+         </div>
+     </div>
+
+     <div class="portfolio-item" data-category="long">
+      <video id="video5" controls>
+          <source src="video5.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      <div class="portfolio-info">
+          <h3>eCommerce video</h3>
+      </div>
+  </div>
+
+  <div class="portfolio-item" data-category="long">
+   <video id="video6" controls>
+       <source src="video6.mp4" type="video/mp4">
+       Your browser does not support the video tag.
+   </video>
+   <div class="portfolio-info">
+       <h3>Documentry video</h3>
+   </div>
+</div>
+
+<div class="portfolio-item" data-category="long">
+   <video id="video7" controls>
+       <source src="video7.mp4" type="video/mp4">
+       Your browser does not support the video tag.
+   </video>
+   <div class="portfolio-info">
+       <h3>Color grading</h3>
+   </div>
+</div>
+
+<div class="portfolio-item" data-category="long">
+   <video id="video8" controls>
+       <source src="video8.mp4" type="video/mp4">
+       Your browser does not support the video tag.
+   </video>
+   <div class="portfolio-info">
+       <h3>Anime</h3>
+   </div>
+</div>
+</section>
+
+     <!-- Contact Section -->
+     <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-container">
+         <div class="contact-info">
+            <div class="social-media">
+               <button id="facebook"><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></button>
+               <button id="linkedin"><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></button>
+               <button id="youtube"><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></button>
+               <button id="instagram"><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></button>
+               <button id="twitter"><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></button>
+            </div>
+         </div>
+         <div class="contact-form">
+            <form action="#" method="POST">
+               <input type="text" name="name" placeholder="Your Name" required />
+               <input type="email" name="email" placeholder="Your Email" required />
+               <input type="text" name="subject" placeholder="Subject" required />
+               <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+               <button type="submit">Send Message</button>
+            </form>
+         </div>
+      </div>
+   </section>
+
+   <!-- Get Started Button -->
+   <section>
+      <button id="click-here">Get Started</button>
+   </section>
+   <script src="script.js"></script>
+</body>
+</html>
